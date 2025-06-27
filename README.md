@@ -43,18 +43,18 @@ asl_recognition/
 ├── models/ # Trained models and encoder
 │ ├── asl_dynamic_ml.keras # J and Z motion model
 │ ├── asl_letter_mlp.keras # A–Z static model
-│ └── label_encoder.pkl # Label encoder for predictions
+│ └── label_encoder.pkl 
 │
 ├── utils/ # Utility scripts
 │ ├── extract_dynamic_landmarks.py
 │ ├── extract_landmarks.py
 │
-├── real_time_inference.py # Real-time webcam prediction
-├── recorded_dynamic.py # Video prediction from recorded clips
+├── real_time_inference.py # Program Entry Point
+├── recorded_dynamic.py 
 ├── train_dynamic_model.py # Model training script (J & Z)
 ├── train_model.py # Model training script (A–Z)
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── requirements.txt 
+└── README.md 
 ---
 
 ## 📥 Dataset Instructions
