@@ -1,7 +1,5 @@
 # 🧠 ASL Alphabet Recognition Using Deep Learning
 
-> Empowering accessibility through AI-driven sign language recognition.
-
 ---
 
 ## 📌 Overview
@@ -34,27 +32,29 @@ Millions of people globally rely on sign language to communicate. However, langu
 ---
 
 ## 📁 Project Structure
+
+
 asl_recognition/
 │
-├── data/ # Downloaded datasets go here
-│ ├── asl_alphabet_train/ # A-Z static images
-│ └── jz_videos/ # J and Z gesture videos
+├── data/ # Downloaded datasets
+│ ├── asl_alphabet_train/ # A–Z static image dataset
+│ └── jz_videos/ # J and Z dynamic gesture videos
 │
-├── models/ # Saved models
-│ ├── asl_dynamic_ml.keras #J and Z motion models
-│ └── asl_letter_mlp.keras # A-Z static models
-│ └── label_encoder.pkl
+├── models/ # Trained models and encoder
+│ ├── asl_dynamic_ml.keras # J and Z motion model
+│ ├── asl_letter_mlp.keras # A–Z static model
+│ └── label_encoder.pkl # Label encoder for predictions
 │
-├── utils/ # Utility functions
+├── utils/ # Utility scripts
 │ ├── extract_dynamic_landmarks.py
-│ └── extract_landmarks.py
-│ └── real_time_inference.py # Real-time webcam inference
-│ └── recorded_dynamic.py
-│ └── train_dynamic_model.py # Main training script
-│ └── train_model.py
+│ ├── extract_landmarks.py
 │
-├── requirements.txt # Dependencies
-└── README.md
+├── real_time_inference.py # Real-time webcam prediction
+├── recorded_dynamic.py # Video prediction from recorded clips
+├── train_dynamic_model.py # Model training script (J & Z)
+├── train_model.py # Model training script (A–Z)
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
 ---
 
 ## 📥 Dataset Instructions
