@@ -1,0 +1,14 @@
+# Python enviroment 
+venv/
+
+# Data and processed outputs
+data/raw/
+data/processed/
+
+# Trained models
+models/
+
+# Any large binaries
+*.avi
+*.npy
+*.zip
