@@ -45,14 +45,14 @@ asl_recognition/
 │ ├── asl_letter_mlp.keras # A–Z static model
 │ └── label_encoder.pkl 
 │
-├── utils/ # Utility scripts
+├── scripts
 │ ├── extract_dynamic_landmarks.py
 │ ├── extract_landmarks.py
+│ ├── real_time_inference.py # Program Entry Point
+│ ├── recorded_dynamic.py 
+│ ├── train_dynamic_model.py # Model training script (J & Z)
+│ ├── train_model.py # Model training script (A–Z)
 │
-├── real_time_inference.py # Program Entry Point
-├── recorded_dynamic.py 
-├── train_dynamic_model.py # Model training script (J & Z)
-├── train_model.py # Model training script (A–Z)
 ├── requirements.txt 
 └── README.md
 ``` 
