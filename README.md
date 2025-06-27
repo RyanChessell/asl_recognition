@@ -33,7 +33,7 @@ Millions of people globally rely on sign language to communicate. However, langu
 
 ## 📁 Project Structure
 
-
+```bash
 asl_recognition/
 │
 ├── data/ # Downloaded datasets
@@ -54,7 +54,8 @@ asl_recognition/
 ├── train_dynamic_model.py # Model training script (J & Z)
 ├── train_model.py # Model training script (A–Z)
 ├── requirements.txt 
-└── README.md 
+└── README.md
+``` 
 ---
 
 ## 📥 Dataset Instructions
