@@ -1,10 +1,10 @@
-# 🧠 ASL Alphabet Recognition Using Deep Learning
+# ASL Alphabet Recognition Using Deep Learning
 
 ---
 
 ## 📌 Overview
 
-This project uses deep learning and computer vision to recognize the American Sign Language (ASL) alphabet. It supports both **static hand gestures (A–Z)** and **dynamic motion gestures (J & Z)**.
+This project uses deep learning and video input to recognize the American Sign Language (ASL) alphabet and display the letters and words from that input to english text. It supports both **static hand gestures (A–Z)** and **dynamic motion gestures (J & Z)**.
 
 It was built to demonstrate my skills in AI model training, data preprocessing, real-time inference, and the application of machine learning to real-world accessibility challenges.
 
@@ -12,7 +12,7 @@ It was built to demonstrate my skills in AI model training, data preprocessing, 
 
 ## 🌍 Real-World Impact
 
-Millions of people globally rely on sign language to communicate. However, language barriers often persist between Deaf and hearing communities. This project aims to:
+Millions of people globally rely on sign language to communicate. However, language barriers often persist between Deaf and hard of hearing (Hoh) communities. This project aims to:
 
 - Bridge that communication gap using AI
 - Support assistive technology tools
@@ -21,13 +21,12 @@ Millions of people globally rely on sign language to communicate. However, langu
 
 ---
 
-## 🧪 Tech Stack
+## 💻 Tech Stack
 
 - **Language:** Python  
 - **Frameworks:** TensorFlow, Keras, OpenCV  
 - **Data Handling:** Pandas, NumPy  
-- **Visualization:** Matplotlib  
-- **Interface:** Jupyter Notebook, OpenCV video feed
+- **Interface:** OpenCV video feed
 
 ---
 
@@ -55,12 +54,13 @@ asl_recognition/
 │
 ├── requirements.txt 
 └── README.md
-``` 
+```
+
 ---
 
 ## 📥 Dataset Instructions
 
-### 📦 1. Download Datasets
+### 1. Download Datasets
 
 - **Static A–Z images:**  
   [ASL Alphabet Dataset (Kaggle)](https://www.kaggle.com/datasets/grassknoted/asl-alphabet)
@@ -68,11 +68,11 @@ asl_recognition/
 - **Dynamic J & Z videos:**  
   [ASL Motion Dataset (Kaggle)](https://www.kaggle.com/datasets/signnteam/asl-sign-language-alphabet-videos-j-z)
 
-> 🔐 *Make sure you’re logged in to Kaggle and have set up the Kaggle API.*
+> *Make sure you’re logged in to Kaggle and have set up the Kaggle API.*
 
 ---
 
-### 🔽 2. Download via Kaggle CLI (Recommended)
+### 2. Download via Kaggle CLI (Recommended)
 ```bash
 pip install kaggle
 ```
@@ -123,21 +123,18 @@ python .\scripts\real_time_inference.py
 
 ---
 
-### ⚙️ Future Improvements
-- Integrate LSTM/3D-CNN for dynamic video gesture recognition (J, Z)
-
+### Future Improvements
 - Support full ASL word recognition and sentence generation
 
 - Add voice feedback for real-time spoken output
 
-- Deploy as a mobile/web app (via TensorFlow Lite or TF.js)
+- Deploy as a web/mobile application (via TensorFlow Lite or TF.js)
 
 - Train on more diverse hand shapes and lighting conditions
+  
+---
 
-### 📜 License
-This project is licensed under the MIT License.
-
-### 📫 Contact
+### Contact
 Ryan Chessell
 [GitHub](https://github.com/RyanChessell)
 [LinkedIn](www.linkedin.com/in/ryanchessell)
